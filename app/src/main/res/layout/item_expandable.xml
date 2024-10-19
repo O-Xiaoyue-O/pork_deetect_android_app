@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/questionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/idView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/valueView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="油花等級"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="@font/df_weibei_std_w7"
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="辨識日期"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="@font/df_weibei_std_w7"
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/expandToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看食譜"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="@font/df_weibei_std_w7"
+        android:textColor="@android:color/holo_blue_dark"
+        android:paddingTop="8dp" />
+    <LinearLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/recipeTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Title"
+            android:textColor="#000000"
+            android:fontFamily="@font/df_weibei_std_w7"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/ingredientsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="#000000"
+            android:fontFamily="@font/df_weibei_std_w7"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/recipeContentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:fontFamily="@font/df_weibei_std_w7"
+            android:textSize="16sp"
+            android:paddingTop="8dp" />
+        <LinearLayout
+            android:id="@+id/questionnaireLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 選擇第一題 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:text="請問您對這份食譜滿意嗎?" />
+
+            <RadioGroup
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton android:id="@+id/radio_very_satisfied_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="非常滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7" />
+                <RadioButton android:id="@+id/radio_satisfied_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="還算滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_neutral_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="沒意見" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_unsatisfied_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+            </RadioGroup>
+
+            <!-- 選擇第二題 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="您覺得這份食譜還合您的胃口嗎?"
+                android:fontFamily="@font/df_weibei_std_w7"/>
+
+            <RadioGroup
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_very_satisfied_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="非常滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_satisfied_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="還算滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_neutral_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="沒意見" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_unsatisfied_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+            </RadioGroup>
+
+            <!-- 選擇第三題 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="這份食譜對您來說有幫助嗎?"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/df_weibei_std_w7"/>
+
+            <RadioGroup
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_very_satisfied_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="非常滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_satisfied_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="還算滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_neutral_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="沒意見" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_unsatisfied_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+            </RadioGroup>
+
+            <!-- 選擇第四題 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您覺得這份食譜對這塊肉的烹飪方式好嗎?"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/df_weibei_std_w7"/>
+            <RadioGroup
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_very_satisfied_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="非常滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_satisfied_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="還算滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_neutral_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="沒意見" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+                <RadioButton android:id="@+id/radio_unsatisfied_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不滿意" android:textColor="#000000"
+                    android:textStyle="bold" android:fontFamily="@font/df_weibei_std_w7"/>
+            </RadioGroup>
+
+            <!-- 填空題-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您對這份食譜有什麼期望、建議或想法嗎?（選填）"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                android:fontFamily="@font/df_weibei_std_w7"/>
+
+            <EditText
+                android:id="@+id/openQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="請填寫您的意見"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="12sp"
+
+                android:fontFamily="@font/df_weibei_std_w7"/>
+
+            <!-- Summit -->
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="送出"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+        <!-- 用於顯示反饋的文本 -->
+        <TextView
+            android:id="@+id/feedbackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

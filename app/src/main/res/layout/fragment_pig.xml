@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PigFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtOne"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="藍瑞斯 Landrace"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="@font/df_liyuan_std_w8"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="297dp"
+                android:layout_height="212dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/race" />
+
+            <TextView
+                android:id="@+id/txtTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="品種特徵"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtThree"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="垂耳。朵適大，向前傾斜，蓋向顏面，兩耳間隔適當；忌耳朵直豎。皮膚平滑無皺紋，無黑斑。毛色全白，柔軟而有光澤。忌有白色以外之毛色及皮毛有漩窩。體側深而長，有 16～17 對肋骨，後臀方正，四肢稍短，下頷平整。每胎出生總頭數約 9.4 頭，八週齡仔豬體重約為 15.7 公斤。成熟體重公約 330 公斤，母約 270 公斤。"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFourth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="選種過程"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFifth"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="福昌藍瑞斯的血源基礎來自瑞典，素以優良的骨架結構著稱。藍瑞斯之母性、泌乳能力好，年產胎數高，使用年限長。本場自民國85年起特別進行豬緊迫敏感症後群(PSS)之篩選，全場藍瑞斯之種公、母豬保證不帶豬緊迫敏感基因。使藍瑞斯之生產效率更為提高。福昌藍瑞斯是以詳細的血統登錄及嚴格的外觀體型審查為基礎，依繁殖性能、生長性能、產肉及屠體性能，分別選育出繁殖系(Reproductivity Line)，生長系(Growth Line)、精肉系(Meat Line)等不同特性之種豬。各系之間再依特殊的體型要求，建立新的遺傳組合。"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSixth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="外型特徵"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSeventh"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="福昌藍瑞斯除具備藍瑞斯的品種特徵及品種特有的體型外，更具有下列之特點：頸部修長無贅肉、身軀特長且高，背腰平直與後軀之連結平滑，胸部寬且深，骨架結構佳，腹線呈直線，深度適中，乳頭發育良好、排列整齊、大小間隔適中、後臀肌肉發達、步態敏捷。"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEighth"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="約克夏 Yorkshire"
+                android:fontFamily="@font/df_liyuan_std_w8"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="297dp"
+                android:layout_height="212dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/shire" />
+
+            <TextView
+                android:id="@+id/txtNinth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="品種特徵"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTenth"
+                android:layout_width="350dp"
+                android:layout_height="130dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="面寬而略凹；耳朵稍大而薄，向上前直立，其近緣毛柔軟，兩耳間隔廣闊。忌耳長及下垂。皮膚全白而平滑，無皺紋，無斑點。毛色全白，柔軟而有光澤。忌有白色以外之毛色及漩渦毛。軀體長而深，且平整；體側尤其深且長，但有時腿部缺乏豐滿。每胎出生總頭數約 11 頭，八週齡仔豬體重約為 14.5 公斤。成熟體重公約 370 公斤，母約 340 公斤。"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEleventh"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="選種過程"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTwelfth"
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="福昌早期由美國及瑞典進口優良的約克夏種公、種母豬來改進並奠定約克夏之基礎核心豬群，除具備骨架結構佳、生長快速、繁殖性能好等特點，更能適應亞熱帶及熱帶型氣候。近年來曾由愛爾蘭引進大白(Large White)種公、種母豬，使本場約克夏的飼料效率及精肉率大為提高。福昌約克夏是以詳細的血統登錄及嚴格的外觀體型審查為基礎，依繁殖性能、生長性能、產肉及屠體性能，分別選育出繁殖系(Reproductivity Line)，生長系(Growth Line)、精肉系(Meat Line)等不同特性之種豬。各系之間再依特殊的體型要求，建立新的遺傳組合。"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtThirteenth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="外型特徵"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFourteenth"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="福昌約克夏除具備約克夏的品種特徵及品種特有的體型外，更具有下列之特點：頭部小、頸部修長、身軀長且高，背線平直，胸部特別寬闊，腹線優美，深度適中，乳頭發育良好，排列整齊、間隔適中，後臀寬厚豐滿，站立端正、肢間寬闊、四肢強健富彈性。"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFifteenth"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="杜洛克 Duroc"
+                android:fontFamily="@font/df_liyuan_std_w8"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="297dp"
+                android:layout_height="212dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/duroc" />
+
+            <TextView
+                android:id="@+id/txtSixteenth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="品種特徵"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSeventeenth"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="耳朵大小適中，根部向上直立，耳端向前傾斜，耳緣毛柔軟，兩耳間隔廣闊。忌耳朵直豎。皮膚平滑無皺紋，紅棕色毛，有光澤，毛質良好。忌有黑色或白色斑點之毛捲及漩渦。軀體長度為中等長。每胎出生總頭數約 8.7 頭，八週齡仔豬體重約為 14 公斤。成熟公豬體重達 300~450 公斤，母豬則為 270~315 公斤。"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEighteenth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="選種過程"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNineteenth"
+                android:layout_width="350dp"
+                android:layout_height="190dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="福昌早期由美國著名的種豬場引進優秀杜洛克種公、種母豬及公豬冷凍精液，來改進並建立杜洛克核心豬群。經過多年閉鎖式選育，加以定期引進新的基因組合，已培育出具有福昌特色的杜洛克種豬；不但更能適應亞熱帶及熱帶型氣候，更具有體型優美，性能突出，抗病力強等特點。福昌杜洛克是以詳細的血統登錄及嚴格的外觀體型審查為基礎，依繁殖性能、生長性能、產肉及屠體性能，分別選育出繁殖系(Reproductivity Line)，生長系(Growth Line)、精肉系(Meat Line)等不同特性之種豬。各系之間再依特殊的體型要求，建立新的遺傳組合。"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTwentieth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="外型特徵"
+                android:paddingLeft="40dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTwentyFirst"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:paddingLeft="40dp"
+                android:singleLine="false"
+                android:text="福昌杜洛克除具備杜洛克的品種特徵及品種特有的體型外，更具有下列之特點：頭小、頸部修長無贅肉，前胸寬闊，胸部特別寬深，骨架粗，肋骨開闊，背線平而微拱，後臀寬厚，肉量豐滿結實，尾根高，兩腿間距寬，全身肌肉分佈均勻，四肢強健有力。"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:fontFamily="@font/df_weibei_std_w7"
+                android:textStyle="bold" />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

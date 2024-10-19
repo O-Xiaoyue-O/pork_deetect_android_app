@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.pork.FirstFragment"
+        android:label="油你真好"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_PigFragment"
+            app:destination="@id/PigFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_RecordFragment"
+            app:destination="@id/RecordFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_LlmFragment"
+            app:destination="@id/LlmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.pork.SecondFragment"
+        android:label="油你真好"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_CameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_FileFragment"
+            app:destination="@id/FileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.pork.CameraFragment"
+        android:label="油你真好"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FileFragment"
+        android:name="com.example.pork.FileFragment"
+        android:label="油你真好"
+        tools:layout="@layout/fragment_file" >
+        <action
+            android:id="@+id/action_FileFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PigFragment"
+        android:name="com.example.pork.PigFragment"
+        android:label="油你真好"
+        tools:layout="@layout/fragment_pig" />
+    <fragment
+        android:id="@+id/RecordFragment"
+        android:name="com.example.pork.RecordFragment"
+        android:label="油你真好"
+        tools:layout="@layout/fragment_record" />
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.pork.ResultFragment"
+        tools:layout="@layout/fragment_result" />
+
+    <fragment
+        android:id="@+id/LlmFragment"
+        android:name="com.example.pork.LlmFragment"
+        tools:layout="@layout/fragment_llm" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pork.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.pork.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register"/>
+</navigation>
